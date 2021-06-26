@@ -1,0 +1,15 @@
+//全域
+*{
+    box-sizing: border-box;
+}
+//設定字體
+html{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+a, a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}

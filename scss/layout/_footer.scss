@@ -1,0 +1,19 @@
+//footer
+
+.footer{
+    @include mobile{
+        justify-content: center;
+    }
+}
+
+.copyRight{
+    @include mobile{
+        font-size: 12px;
+    }
+}
+
+.footerList{
+    @include mobile{
+        display: none;
+    }
+}

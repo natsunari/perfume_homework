@@ -1,0 +1,90 @@
+.member{
+    @include mobile{
+        padding: 40px 0px;
+        flex-wrap: wrap;
+    }
+}
+
+.memberCenterTitle{
+    @include mobile{
+        display: none;
+    }
+}
+
+.memberCenter{
+    padding-right: 90px;
+    @include mobile{
+        display: flex;
+        padding-right: 0px;
+        padding-bottom: 25px;
+        li{
+            margin: 0px 10px;
+        }
+    }
+}
+.memberCenterList{
+    @include underLine;
+}
+
+.memeberTitle{
+    border-bottom: 1px solid $secondaryColorMid;
+    @include mobile{
+        width: 50%;
+    }
+    
+}
+
+.setRowRe{
+    @include mobile{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.memberDetail{
+    @include mobile{
+        margin-bottom: 40px;
+    }
+}
+
+.memberDetailList{
+    width: 80px;
+}
+
+.personalInfo{
+    padding-right: 30px;
+    width: 650px;
+    @include mobile{
+        padding-right: 0px;
+    }
+}
+
+.personalInfoInput{
+    @include inputStyle;
+    @include mobile{
+        width: 35%;
+    }
+}
+
+.personalInfoDropdown{
+    @include dropdown;
+    width: 25%;
+    @include mobile{
+        width: 20%;
+    }
+}
+
+.sexDropdown{
+    @include inputStyle;
+    width: 10%;
+}
+
+.saveBtn{
+    @include logInBtnStyle;
+    background: $primaryColor;
+    color: $assistColorWhite;
+    padding: 8px 48px;
+    &:hover,:active{
+        background-color: darken($primaryColor,10%);
+    }
+}

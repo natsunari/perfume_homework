@@ -1,0 +1,255 @@
+//font-size
+.fz-12{
+    font-size: 12px;
+    line-height: 1.5;
+}
+.fz-20{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.fz-24{
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.fz-32{
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.fz-40{
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.fw-light{
+    font-weight: 300;
+}
+
+.fw-mid{
+    font-weight: 500;
+}
+
+.fw-semibold{
+    font-weight: 700;
+}
+
+.line-height{
+    line-height: 1.5;;
+}
+
+.fw-bold{
+    font-weight: 900;
+}
+
+//文字顏色
+.colorPrimary{
+    color: $primaryColor;
+}
+
+.colorSecondaryDark{
+    color:$secondaryColorDark ;
+}
+
+.colorSecondaryMid{
+    color:$secondaryColorMid ;
+}
+.colorSecondaryLight{
+    color: $secondaryColorLight;
+}
+
+.colorAssistWhite{
+    color:$assistColorWhite ;
+}
+
+.colorAssistColorBlack{
+    color: $assistColorBlack;
+}
+
+//文字裝飾
+.LineThrough{
+    text-decoration:line-through;
+}
+
+
+//背景顏色
+.bgPrimary{
+    background-color: $primaryColor;
+}
+
+.bgSecondaryDark{
+    background-color:$secondaryColorDark ;
+}
+
+.bgSecondaryMid{
+    background-color:$secondaryColorMid ;
+}
+.bgSecondaryLight{
+    background-color: $secondaryColorLight;
+}
+
+.bgAssistWhite{
+    background-color:$assistColorWhite ;
+}
+
+.bgAssistBlack{
+    background-color: $assistColorBlack;
+}
+
+
+//padding
+.p-tb-5{
+    padding: 5px 0px;
+}
+
+.p-tb-10{
+    padding: 10px 0px;
+}
+.p-tb-15{
+    padding: 15px 0px;
+}
+
+.p-tb-30{
+    padding: 30px 0px;
+}
+
+.p-tb-20{
+    padding: 20px 0px;
+}
+
+.p-tb-40{
+    padding: 40px 0px;
+}
+
+.p-tb-80{
+    padding: 80px 0px;
+}
+
+.p-b-16{
+    padding-bottom: 16px;
+}
+
+.p-lr-15{
+    padding: 0px 15px;
+}
+.p-lr-50{
+    padding: 0px 50px;
+}
+
+.p-l-15{
+    padding-left: 15px;
+}
+
+.p-l-20{
+    padding-left: 20px;
+}
+
+.p-l-30{
+    padding-left: 30px;
+}
+
+.p-l-36{
+    padding-left: 36px;
+}
+
+.p-l-98{
+    padding-left: 98px;
+}
+
+.p-r-8{
+    padding-right: 8px;
+}
+
+.p-r-30{
+    padding-right: 30px;
+}
+
+.p-r-90{
+    padding-right: 90px;
+}
+
+.p-b-15{
+    padding-bottom: 15px;
+}
+.p-b-25{
+    padding-bottom: 25px;
+}
+
+.p-b-30{
+    padding-bottom: 30px;
+}
+
+.p-b-80{
+    padding-bottom: 80px;
+}
+
+.p-b-50{
+    padding-bottom: 50px;
+}
+
+// margin
+.m-b-5{
+    margin-bottom: 5px;
+}
+
+.m-r-90{
+    margin-right: 90px;
+}
+.m-b-60{
+    margin-bottom: 60px;
+}
+
+
+//display變換
+.displayBlock{
+    display: block;
+}
+
+.displayInline{
+    display: inline;
+}
+.displayInlineBlock{
+    display: inline-block;
+}
+
+
+//flex效果
+.setFlex{
+    display: flex;
+}
+
+.setFlexWrap{
+    flex-wrap: wrap;
+}
+
+.setFlexJcsb{
+    justify-content: space-between;
+}
+
+.setFlexJcc{
+    justify-content: center;
+}
+
+.setFlexJcfe{
+    justify-content: flex-end;
+}
+
+.setFlexAic{
+    align-items: center;
+}
+
+.setRowRe{
+    flex-direction: row-reverse;
+}
+
+.setCol{
+    flex-direction: column;
+}
+
+//排版
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

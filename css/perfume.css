@@ -1,0 +1,1169 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fz-12 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.fz-20 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.fz-24 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.fz-32 {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.fz-40 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-mid {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 700;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+.fw-bold {
+  font-weight: 900;
+}
+
+.colorPrimary {
+  color: #916019;
+}
+
+.colorSecondaryDark {
+  color: #707070;
+}
+
+.colorSecondaryMid {
+  color: #8D8D8D;
+}
+
+.colorSecondaryLight {
+  color: #E0E0E0;
+}
+
+.colorAssistWhite {
+  color: #ffffff;
+}
+
+.colorAssistColorBlack {
+  color: #000000;
+}
+
+.LineThrough {
+  text-decoration: line-through;
+}
+
+.bgPrimary {
+  background-color: #916019;
+}
+
+.bgSecondaryDark {
+  background-color: #707070;
+}
+
+.bgSecondaryMid {
+  background-color: #8D8D8D;
+}
+
+.bgSecondaryLight {
+  background-color: #E0E0E0;
+}
+
+.bgAssistWhite {
+  background-color: #ffffff;
+}
+
+.bgAssistBlack {
+  background-color: #000000;
+}
+
+.p-tb-5 {
+  padding: 5px 0px;
+}
+
+.p-tb-10 {
+  padding: 10px 0px;
+}
+
+.p-tb-15 {
+  padding: 15px 0px;
+}
+
+.p-tb-30 {
+  padding: 30px 0px;
+}
+
+.p-tb-20 {
+  padding: 20px 0px;
+}
+
+.p-tb-40 {
+  padding: 40px 0px;
+}
+
+.p-tb-80 {
+  padding: 80px 0px;
+}
+
+.p-b-16 {
+  padding-bottom: 16px;
+}
+
+.p-lr-15 {
+  padding: 0px 15px;
+}
+
+.p-lr-50 {
+  padding: 0px 50px;
+}
+
+.p-l-15 {
+  padding-left: 15px;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+.p-l-30 {
+  padding-left: 30px;
+}
+
+.p-l-36 {
+  padding-left: 36px;
+}
+
+.p-l-98 {
+  padding-left: 98px;
+}
+
+.p-r-8 {
+  padding-right: 8px;
+}
+
+.p-r-30 {
+  padding-right: 30px;
+}
+
+.p-r-90 {
+  padding-right: 90px;
+}
+
+.p-b-15 {
+  padding-bottom: 15px;
+}
+
+.p-b-25 {
+  padding-bottom: 25px;
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.p-b-80 {
+  padding-bottom: 80px;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
+}
+
+.m-r-90 {
+  margin-right: 90px;
+}
+
+.m-b-60 {
+  margin-bottom: 60px;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayInline {
+  display: inline;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.setFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.setFlexWrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.setFlexJcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.setFlexJcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.setFlexJcfe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.setFlexAic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setRowRe {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.setCol {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  text-indent: 101%;
+  /*首行縮排*/
+  overflow: hidden;
+  /*自動隱藏超出的文字或圖片*/
+  display: none;
+  white-space: nowrap;
+  /*希望元素在第一排上面，沒有斷行*/
+}
+
+.headerMenu {
+  line-height: 24px;
+}
+
+@media screen and (max-width: 376px) {
+  .headerMenu {
+    display: none;
+  }
+}
+
+.headerMobileMenu {
+  display: none;
+  position: relative;
+}
+
+@media screen and (max-width: 376px) {
+  .headerMobileMenu {
+    display: block;
+  }
+}
+
+.iconCartQuantity {
+  position: absolute;
+  border-radius: 50%;
+  line-height: 12px;
+  text-align: center;
+  padding: 3px 6px;
+  margin: 5px 0px 0px -30px;
+}
+
+@media screen and (max-width: 376px) {
+  .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .copyRight {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .footerList {
+    display: none;
+  }
+}
+
+.subscription {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true);
+}
+
+@media screen and (max-width: 376px) {
+  .subscription {
+    background-position: 20% 50%;
+  }
+}
+
+.subscriptionWord {
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 300px 0px 20px 0px;
+}
+
+.subscriptionInputGroup {
+  padding-bottom: 110px;
+}
+
+.subscriptionMail, .subscriptionSubmit {
+  padding: 20px 26px;
+  border: 2px solid #916019;
+  text-align: center;
+}
+
+.subscriptionMail {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.subscriptionSubmit {
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+.setMore {
+  font-weight: bolder;
+  color: #916019;
+  cursor: pointer;
+}
+
+.setMore:hover {
+  color: #dc9734;
+}
+
+.banner {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+@media screen and (max-width: 376px) {
+  .banner {
+    max-height: 480px;
+    background-position: 25% 76%;
+  }
+}
+
+.bannerWord {
+  padding: 300px 15px;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 376px) {
+  .bannerWord {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px 15px;
+  }
+}
+
+.bannerWordTitle {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.bannerWordIntro {
+  font-weight: light;
+  line-height: 1.5;
+}
+
+.bannerWordBtn {
+  border: 2px solid #707070;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 28px;
+  padding: 15px 100px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.bannerWordBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 376px) {
+  .bannerWordBtn {
+    font-size: 24px;
+  }
+}
+
+.flagshipProduct, .bestSelling {
+  padding: 60px 0px;
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProduct, .bestSelling {
+    padding: 40px 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProductList {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.flagshipProductWord, .flagshipProductImgWrap {
+  width: 50%;
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProductWord, .flagshipProductImgWrap {
+    width: 100%;
+  }
+}
+
+.flagshipProductImg-position {
+  -o-object-position: 10% 50%;
+     object-position: 10% 50%;
+}
+
+.flagshipProductWord {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 90px 110px;
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProductWord {
+    padding: 8px 0px 32px 0px;
+  }
+}
+
+.flagshipProductLastWord {
+  padding: 60px 110px;
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProductLastWord {
+    padding: 8px 0px 0px 0px;
+  }
+}
+
+.flagshipProductImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 555px;
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProductImg {
+    height: 350px;
+  }
+}
+
+.flagshipProductLastImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 1080px;
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProductLastImg {
+    height: 680px;
+  }
+}
+
+.flagshipProducTitle {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.flagshipProductLastTitle, .saleProductTitle {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.flagshipProductIntro {
+  font-weight: light;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.flagshipProductLastIntro {
+  font-weight: light;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 376px) {
+  .flagshipProductLastIntro {
+    padding-bottom: 0px;
+    margin-bottom: -30px;
+  }
+}
+
+.flagshipProductBtn {
+  border: 2px solid #707070;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 18px 50px;
+  border-color: #000000;
+}
+
+.flagshipProductBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.flagshipProductBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 376px) {
+  .saleProduct {
+    padding: 32px 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .saleProductItem {
+    padding-bottom: 32px;
+  }
+}
+
+.saleProductList {
+  margin: 0 -15px;
+}
+
+@media screen and (max-width: 376px) {
+  .saleProductList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: -32px;
+  }
+}
+
+.saleProductImg, .saleProductSaleOutMask {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 540px;
+}
+
+@media screen and (max-width: 376px) {
+  .saleProductImg, .saleProductSaleOutMask {
+    height: 350px;
+  }
+}
+
+.saleProductBrand {
+  font-weight: light;
+  line-height: 1.5;
+}
+
+.saleProductSaleOut {
+  position: relative;
+}
+
+.saleProductSaleOutMask {
+  position: absolute;
+  background-color: rgba(112, 112, 112, 0.5);
+}
+
+.saleProductSaleOutWord {
+  font-weight: bold;
+  line-height: 1.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (max-width: 376px) {
+  .bestSelling {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.bestSellingImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 520px;
+}
+
+@media screen and (max-width: 376px) {
+  .bestSellingWord {
+    padding-left: 0px;
+  }
+}
+
+.bestSellingTitle {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.bestSellingSubtitle {
+  font-weight: light;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 376px) {
+  .bestSellingSubtitle {
+    padding-bottom: 8px;
+  }
+}
+
+.bestSellingIntro {
+  font-weight: light;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 376px) {
+  .bestSellingIntro {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .productBar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .productAllList {
+    padding: 40px 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .productAllList h3 {
+    font-size: 20px;
+  }
+}
+
+.productImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 255px;
+  height: 255px;
+}
+
+@media screen and (max-width: 376px) {
+  .productImg {
+    width: 165px;
+    height: 165px;
+  }
+}
+
+.productObPosition010100 {
+  -o-object-position: 0% 100%;
+     object-position: 0% 100%;
+}
+
+.productObPosition010035 {
+  -o-object-position: 10% 35%;
+     object-position: 10% 35%;
+}
+
+.productObPosition00 {
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+
+@media screen and (max-width: 376px) {
+  .pageChange {
+    padding-bottom: 40px;
+  }
+}
+
+.pageChangeBtn {
+  position: relative;
+}
+
+.pageChangeBtn::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #916019;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.pageChangeBtn:hover::after {
+  width: 100%;
+}
+
+.pageChangeBtn a {
+  color: #000000;
+}
+
+.pageChangeBtn a:hover {
+  color: #916019;
+}
+
+@media screen and (max-width: 376px) {
+  .productDetail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 30px 0px;
+  }
+}
+
+.productDetailImg {
+  max-width: 730px;
+}
+
+@media screen and (max-width: 376px) {
+  .productDetailImg {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+
+.productDetailImgFirst {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 730px;
+  height: 460px;
+}
+
+@media screen and (max-width: 376px) {
+  .productDetailImgFirst {
+    display: none;
+  }
+}
+
+.productDetailImgW {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 730px;
+  height: 460px;
+}
+
+@media screen and (max-width: 376px) {
+  .productDetailImgW {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+
+.productMobileImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  display: none;
+}
+
+@media screen and (max-width: 376px) {
+  .productMobileImg {
+    display: block;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 25px;
+  }
+}
+
+.productDetailImgH {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 335px;
+  height: 640px;
+}
+
+@media screen and (max-width: 376px) {
+  .productDetailImgH {
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+  }
+}
+
+.productQuantity input {
+  display: block;
+  height: 50px;
+  text-align: center;
+  outline: none;
+}
+
+.productQuantityInput {
+  border: 1px solid #916019;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.productAddCart {
+  border: 1px solid #916019;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 376px) {
+  .addLoveProduct {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .purchaseNotes {
+    padding: 30px 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .purchaseNotes .p-tb-20 {
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .logInInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0px;
+  }
+}
+
+.logInImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 730px;
+  height: 730px;
+}
+
+@media screen and (max-width: 376px) {
+  .logInImg {
+    width: 100%;
+    height: 220px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .logInWordGroup {
+    padding: 30px 0px 60px 0px;
+  }
+}
+
+.logInInput {
+  width: 350px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 376px) {
+  .logInInput {
+    min-width: 100%;
+  }
+}
+
+.logInBtn {
+  border: 1px solid #916019;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.logInBtn:hover, .logInBtn:active {
+  background-color: #916019;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 376px) {
+  .member {
+    padding: 40px 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .memberCenterTitle {
+    display: none;
+  }
+}
+
+.memberCenter {
+  padding-right: 90px;
+}
+
+@media screen and (max-width: 376px) {
+  .memberCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 0px;
+    padding-bottom: 25px;
+  }
+  .memberCenter li {
+    margin: 0px 10px;
+  }
+}
+
+.memberCenterList {
+  position: relative;
+}
+
+.memberCenterList::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #916019;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.memberCenterList:hover::after {
+  width: 100%;
+}
+
+.memeberTitle {
+  border-bottom: 1px solid #8D8D8D;
+}
+
+@media screen and (max-width: 376px) {
+  .memeberTitle {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .setRowRe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .memberDetail {
+    margin-bottom: 40px;
+  }
+}
+
+.memberDetailList {
+  width: 80px;
+}
+
+.personalInfo {
+  padding-right: 30px;
+  width: 650px;
+}
+
+@media screen and (max-width: 376px) {
+  .personalInfo {
+    padding-right: 0px;
+  }
+}
+
+.personalInfoInput {
+  width: 50%;
+  height: 38px;
+  border: 1px solid #8D8D8D;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 376px) {
+  .personalInfoInput {
+    width: 35%;
+  }
+}
+
+.personalInfoDropdown {
+  height: 38px;
+  border: 1px solid #8D8D8D;
+  border-radius: 4px;
+  width: 25%;
+}
+
+@media screen and (max-width: 376px) {
+  .personalInfoDropdown {
+    width: 20%;
+  }
+}
+
+.sexDropdown {
+  width: 50%;
+  height: 38px;
+  border: 1px solid #8D8D8D;
+  border-radius: 4px;
+  width: 10%;
+}
+
+.saveBtn {
+  border: 1px solid #916019;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  background: #916019;
+  color: #ffffff;
+  padding: 8px 48px;
+}
+
+.saveBtn:hover, .saveBtn:active {
+  background-color: #916019;
+  color: #ffffff;
+}
+
+.saveBtn:hover, .saveBtn :active {
+  background-color: #664312;
+}
+/*# sourceMappingURL=perfume.css.map */

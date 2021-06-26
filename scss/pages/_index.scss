@@ -1,0 +1,219 @@
+.setMore{
+    @include introMore;
+}
+
+// banner
+.banner{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true);
+    @include bgImg;
+    //手機
+    @include mobile{
+        max-height: 480px;
+        background-position: 25% 76%;
+    }
+}
+
+.bannerWord{
+    padding: 300px 15px;
+    max-width: 450px;
+    
+    //手機
+    @include mobile{
+        align-items: center;
+        padding: 100px 15px;
+    }
+}
+.bannerWordTitle{
+    @include introTitle;
+}
+
+.bannerWordIntro{
+    @include introWord;
+}
+
+.bannerWordBtn{
+    @include btnStyle;
+    font-size: 28px;
+    padding: 15px 100px;
+    color: $assistColorWhite;
+    border: 2px solid $assistColorWhite;
+    //手機
+    @include mobile{
+        font-size: 24px;
+    }
+}
+
+// 主打商品Flagship product
+.flagshipProduct, .bestSelling{
+    padding: 60px 0px;
+    @include mobile{
+        padding: 40px 0px;
+    }
+}
+
+.flagshipProductList{
+    @include mobile{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+.flagshipProductWord, .flagshipProductImgWrap{
+    width: 50%;
+    @include mobile{
+        width: 100%;
+    }
+}
+
+.flagshipProductImg-position{
+    object-position: 10% 50%;
+}
+
+.flagshipProductWord{
+    flex-direction: column;
+    padding: 90px 110px;
+    @include mobile{
+        padding: 8px 0px 32px 0px ;
+    }
+}
+
+.flagshipProductLastWord{
+    padding: 60px 110px;
+    @include mobile{
+        padding: 8px 0px 0px 0px ;
+    }
+}
+
+.flagshipProductImg{
+    @include imgOjFit;
+    width: 100%;//列出想要呈現的寬高
+    height: 555px;//列出想要呈現的寬高
+    @include mobile{
+        height:350px ;
+    }
+}
+
+.flagshipProductLastImg{
+    @include imgOjFit;
+    width: 100%;//列出想要呈現的寬高
+    height: 1080px;//列出想要呈現的寬高
+    @include mobile{
+        height:680px ;
+    }
+}
+
+.flagshipProducTitle{
+    @include introTitle;
+}
+
+.flagshipProductLastTitle, .saleProductTitle{
+    @include introTitle;
+}
+
+.flagshipProductIntro{
+    @include introWord;
+    font-weight: 300;
+}
+
+.flagshipProductLastIntro{
+    @include introWord;
+    @include mobile{
+        padding-bottom:0px;
+        margin-bottom: -30px; 
+    }
+}
+
+.flagshipProductBtn{
+    @include btnStyle;
+    padding: 18px 50px;
+    border-color:$assistColorBlack ;
+    &:hover{
+        background-color: rgba($assistColorBlack, $alpha:0.1);
+    }
+}
+
+// 促銷商品Sale product
+.saleProduct{
+    @include mobile{
+        padding: 32px 0px;
+    }
+}
+
+.saleProductItem{
+    @include mobile{
+        padding-bottom: 32px;
+    }
+}
+
+.saleProductList{
+    margin: 0 -15px;
+    @include mobile{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -32px;
+    }
+}
+
+.saleProductImg, .saleProductSaleOutMask{
+    @include imgOjFit;
+    width: 100%;
+    height: 540px;
+    @include mobile{
+        height: 350px;
+    }
+}
+
+.saleProductBrand{
+    @include introWord;
+}
+
+.saleProductSaleOut{
+    position: relative;
+}
+
+.saleProductSaleOutMask{
+    position: absolute;
+    background-color:rgba($color: $secondaryColorDark, $alpha: 0.5) ;
+}
+.saleProductSaleOutWord{
+    @include introTitle;
+    @include absoluteCenter;
+}
+
+// 熱銷商品Best selling product
+.bestSelling{
+    @include mobile{
+        flex-wrap: wrap;
+    }
+}
+
+.bestSellingImg{
+    @include imgOjFit;
+    width: 100%;
+    height: 520px;
+}
+
+.bestSellingWord{
+    @include mobile{
+        padding-left: 0px;
+    }
+}
+
+.bestSellingTitle{
+    @include introTitle;
+}
+
+.bestSellingSubtitle{
+    @include introWord;
+    @include mobile{
+        padding-bottom: 8px;
+    }
+}
+
+.bestSellingIntro{
+    @include introWord;
+    @include mobile{
+        padding-bottom: 8px;
+    }
+}
+

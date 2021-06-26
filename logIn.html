@@ -1,0 +1,51 @@
+<head class="headMetaPage">
+</head>
+
+<body>
+    <!-- header Page -->
+    <div class="headerPage"></div>
+    <!-- product bar -->
+    <div class="productBarPage"></div>
+
+    <div class="container">
+        <div class="logInInfo p-tb-80 setFlex setFlexAic">
+            <img class="logInImg p-r-30"
+                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/login1.jpg?raw=true"
+                alt="logIn">
+            <div class="logInWordGroup">
+                <h2 class="fz-32 fw-semibold p-b-16">Log in</h2>
+                <ul>
+                    <li class="p-b-16">
+                        <p class="p-tb-5">帳號</p>
+                        <input autofocus class="logInInput" type="email" placeholder="email@example.com">
+                    </li>
+                    <li class="p-b-30">
+                        <p class="p-tb-5">密碼</p>
+                        <input class="logInInput" type="password" placeholder="Password">
+                    </li>
+                </ul>
+                <div class="setFlex setFlexJcsb setFlexAic">
+                    <a href="#">
+                        <span class="colorPrimary fw-mid">忘記密碼</span>
+                    </a>
+                    <div class="logInBtn-group">
+                        <button class="colorPrimary logInBtn">註冊</button>
+                        <button class="colorPrimary logInBtn">登入</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer Page -->
+    <div class="footerPage"></div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(".headMetaPage").load("headMeta.html");
+    $(".headerPage").load("header.html");
+    $(".productBarPage").load("productBar.html")
+    $(".subscriptionPage").load("subscription.html");
+    $(".footerPage").load("footer.html");
+</script>

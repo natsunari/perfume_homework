@@ -1,0 +1,122 @@
+
+//圖片自適應
+@mixin imgOjFit {
+    //加上想要呈現的寬高
+    object-fit: cover;
+    display: block;
+    
+}
+
+// 絕對定位置中
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//下底線效果
+@mixin underLine {
+    position: relative;
+    &::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: $primaryColor;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    transition: all .2s linear;
+    }
+    
+    &:hover::after{
+        width: 100%;
+    }
+}
+
+//input
+@mixin inputStyle {
+    width: 50%;
+    height: 38px;
+    border: 1px solid $secondaryColorMid;
+    border-radius: 4px;
+}
+
+@mixin dropdown{
+    height: 38px;
+    border: 1px solid $secondaryColorMid;
+    border-radius: 4px;
+}
+
+
+// RWD
+
+@mixin mobile {
+    @media screen and (max-width: 376px) {
+        @content;
+    }
+}
+
+//背景圖片設定
+@mixin bgImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+//圖片取代文字
+@mixin imgShowTextHidden {
+    text-indent:101%; /*首行縮排*/
+    overflow:hidden; /*自動隱藏超出的文字或圖片*/
+    display: none;
+    white-space:nowrap; /*希望元素在第一排上面，沒有斷行*/
+}
+
+
+// 首頁-介紹標題
+@mixin introTitle {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+// 首頁-介紹內文
+@mixin introWord {
+    font-weight: light;
+    line-height: 1.5;
+}
+
+//首頁-觀看更多
+@mixin introMore {
+    font-weight: bolder;
+    color: $primaryColor;
+    cursor: pointer;
+    &:hover{
+        color: lighten($primaryColor,20%);
+    }
+}
+
+@mixin btnStyle {
+    border: 2px solid $secondaryColorDark;
+    border-radius:30px ;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba($assistColorWhite, $alpha: 0);
+        &:hover{
+            background-color: rgba($assistColorWhite, $alpha:0.2);
+        }
+}
+
+@mixin logInBtnStyle {
+    border: 1px solid $primaryColor;
+    border-radius:4px ;
+    padding: 10px 16px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba($assistColorWhite, $alpha: 0);
+        &:hover, &:active{
+            background-color: $primaryColor;
+            color: $assistColorWhite;
+        }
+}

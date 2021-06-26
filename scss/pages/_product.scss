@@ -1,0 +1,53 @@
+.productBar{
+    @include mobile{
+        display: none;
+    }
+}
+
+.productAllList{
+    @include mobile{
+        padding:40px 0px; 
+    }
+    h3{
+        @include mobile{
+            font-size: 20px;
+        }
+    }
+}
+
+.productImg{
+    @include imgOjFit;
+    width:255px ;
+    height: 255px;
+    @include mobile{
+        width: 165px;
+        height: 165px;
+    }
+}
+.productObPosition010100{
+    object-position: 0% 100%;
+}
+
+.productObPosition010035{
+    object-position: 10% 35%;
+}
+
+.productObPosition00{
+    object-position: 0% 0%;
+}
+
+.pageChange{
+    @include mobile{
+        padding-bottom: 40px;
+    }
+}
+
+.pageChangeBtn{
+   @include underLine;
+   a{
+        color: $assistColorBlack;
+        &:hover{
+            color: $primaryColor;
+        }
+    }
+}

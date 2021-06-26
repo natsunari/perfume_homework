@@ -1,0 +1,30 @@
+
+// 訂閱資訊subscription
+.subscription{
+    @include bgImg;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true);
+    @include mobile{
+        background-position:20% 50%; 
+
+    }
+}
+.subscriptionWord{
+    @include introTitle;
+    padding: 300px 0px 20px 0px;
+}
+.subscriptionInputGroup{
+    padding-bottom: 110px;
+}
+
+.subscriptionMail, .subscriptionSubmit{
+    padding: 20px 26px;
+    border: 2px solid $primaryColor;
+    text-align: center;
+}
+.subscriptionMail{
+    border-radius:4px 0px 0px 4px ;
+}
+.subscriptionSubmit{
+    border-radius:0px 4px 4px 0px ;
+    cursor: pointer;
+}
